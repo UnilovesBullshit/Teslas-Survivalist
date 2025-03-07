@@ -1,2 +1,2 @@
 # Tesla's Survivalist
-Tesla's Survivalist Modpack
+Tesla's Survivalist MC Modpack
