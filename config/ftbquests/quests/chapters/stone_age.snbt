@@ -1,0 +1,161 @@
+{
+	consume_items: false
+	default_hide_dependency_lines: false
+	default_quest_shape: "gear"
+	filename: "stone_age"
+	group: "5361673738C993F9"
+	hide_quest_until_deps_complete: true
+	icon: {
+		Count: 1
+		id: "minecraft:stone_pickaxe"
+		tag: {
+			Damage: 0
+		}
+	}
+	id: "284281FCF2027621"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["Make a stone pickaxe to mine basic ores"]
+			id: "28EB389DA60A9E04"
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "67B05661D4963E33"
+				item: {
+					Count: 1
+					id: "minecraft:stone_pickaxe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Your First Tool"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["28EB389DA60A9E04"]
+			id: "39E853EF9012FD66"
+			shape: "gear"
+			tasks: [{
+				count: 10L
+				id: "0640A6F2D96CCA1B"
+				item: { Count: 10, id: "create:andesite_alloy" }
+				type: "item"
+			}]
+			title: "Your First Alloy"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["39E853EF9012FD66"]
+			id: "157545E0949071BC"
+			tasks: [{
+				id: "3F9650048453D261"
+				item: "create:mechanical_press"
+				type: "item"
+			}]
+			title: "Pressing Plates"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["157545E0949071BC"]
+			id: "68BE9C2371A1611A"
+			tasks: [{
+				id: "30F1A8D3F9146FBF"
+				item: "create:mechanical_mixer"
+				type: "item"
+			}]
+			title: "Mixing Alloys"
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"68BE9C2371A1611A"
+				"0810810604C93F4C"
+			]
+			description: ["Obtain Brass - the base material for Steam Age"]
+			id: "1BF88E2C675666E5"
+			size: 2.0d
+			tasks: [{
+				id: "57B3E02F96BA390B"
+				item: "create:brass_ingot"
+				type: "item"
+			}]
+			title: "A Better Alloy"
+			x: 6.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"157545E0949071BC"
+				"4DAA7438755D87BC"
+			]
+			icon: "create:blaze_burner"
+			id: "0810810604C93F4C"
+			tasks: [{
+				id: "6B44E883FC77ED60"
+				item: "create:blaze_burner"
+				type: "item"
+			}]
+			title: "Primitive Blasting"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			id: "4DAA7438755D87BC"
+			tasks: [{
+				dimension: "minecraft:the_nether"
+				icon: "minecraft:netherrack"
+				id: "299F94F4A428887A"
+				title: "The Nether"
+				type: "dimension"
+			}]
+			x: 6.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["68BE9C2371A1611A"]
+			description: ["Andesite Alloy can be made cheaper using the Mechanical Mixer, so why not mass produce it?"]
+			icon: "create:andesite_alloy_block"
+			id: "507AD094714EDE94"
+			optional: true
+			shape: "circle"
+			tasks: [{
+				count: 64L
+				id: "2E45552CFF72E4CC"
+				item: { Count: 64, id: "create:andesite_alloy" }
+				type: "item"
+			}]
+			title: "Mass Production"
+			x: 4.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["28EB389DA60A9E04"]
+			id: "7DFDF67F5801A089"
+			optional: true
+			shape: "circle"
+			tasks: [{
+				id: "11E1BBA99A8A1BE4"
+				item: {
+					Count: 1
+					id: "minecraft:iron_pickaxe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Getting an Upgrade"
+			x: 0.0d
+			y: -2.0d
+		}
+	]
+	title: "Stone Age"
+}

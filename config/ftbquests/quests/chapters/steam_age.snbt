@@ -1,0 +1,656 @@
+{
+	consume_items: false
+	default_hide_dependency_lines: false
+	default_quest_shape: "gear"
+	filename: "steam_age"
+	group: "5361673738C993F9"
+	hide_quest_until_deps_visible: true
+	icon: "create:steam_engine"
+	id: "09001072F8DFBC84"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["1BF88E2C675666E5"]
+			hide_until_deps_complete: true
+			id: "0E6847B4B838CF26"
+			size: 1.5d
+			tasks: [{
+				id: "13E56C05561B68A2"
+				item: "create:brass_ingot"
+				type: "item"
+			}]
+			title: "Age 0.5"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0E6847B4B838CF26"]
+			id: "45CA43817D276498"
+			tasks: [{
+				count: 21L
+				id: "56EFC2B8397D5916"
+				item: "create:mechanical_crafter"
+				type: "item"
+			}]
+			title: "Basic Autocrafting"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["45CA43817D276498"]
+			id: "3DAE29900138C631"
+			tasks: [{
+				count: 2L
+				id: "2F058D4033A2C66A"
+				item: { Count: 2, id: "create:crushing_wheel" }
+				type: "item"
+			}]
+			title: "Crushing Expectations"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"3C894516AACCF7C3"
+				"1744AD8C3A99F437"
+			]
+			description: ["Make a Blaze Cake and unlock overheating"]
+			id: "7F119AEDA1AAEBDF"
+			subtitle: "You'll need a lot of those"
+			tasks: [{
+				id: "7DD72E73725F9251"
+				item: "create:blaze_cake"
+				type: "item"
+			}]
+			title: "A Better Fuel"
+			x: 4.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["3DAE29900138C631"]
+			description: ["Gather some Blaze Rods and crush them"]
+			icon: "minecraft:blaze_powder"
+			id: "1744AD8C3A99F437"
+			tasks: [
+				{
+					count: 32L
+					id: "3688CD0AC3CC58A7"
+					item: "minecraft:blaze_powder"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "6A939CD5CFBBF858"
+					item: "minecraft:blaze_rod"
+					type: "item"
+				}
+			]
+			title: "Fiery Flour"
+			x: 6.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["3DAE29900138C631"]
+			id: "233AA3A53ED6B341"
+			tasks: [{
+				id: "0AD8E68C6932E0B1"
+				item: "gtceu:wood_dust"
+				type: "item"
+			}]
+			title: "Woodchipper"
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["3DAE29900138C631"]
+			description: ["Gather some Sulfur and crush it"]
+			id: "777327AD8622CD4A"
+			tasks: [{
+				count: 32L
+				id: "5925B526975824BF"
+				item: "gtceu:sulfur_dust"
+				type: "item"
+			}]
+			title: "Brimstone Dust"
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"233AA3A53ED6B341"
+				"777327AD8622CD4A"
+			]
+			icon: "gtceu:rubber_ingot"
+			id: "6E3F12695E915908"
+			tasks: [{
+				id: "65BD03D682EF101F"
+				item: "gtceu:rubber_ingot"
+				type: "item"
+			}]
+			title: "Dont ask how"
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["233AA3A53ED6B341"]
+			id: "0B78DEE76ECACECD"
+			optional: true
+			shape: "circle"
+			tasks: [{
+				id: "61C3D630487353B7"
+				item: "minecraft:paper"
+				type: "item"
+			}]
+			title: "Pressing Paper"
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["6E3F12695E915908"]
+			icon: "create:fluid_pipe"
+			id: "3C894516AACCF7C3"
+			tasks: [
+				{
+					id: "653871336105A075"
+					item: "create:spout"
+					type: "item"
+				}
+				{
+					id: "4024A7329CAD9C30"
+					item: "create:mechanical_pump"
+					type: "item"
+				}
+			]
+			title: "Fluidgun!"
+			x: 2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["7F119AEDA1AAEBDF"]
+			id: "7BBA9DD976A6E780"
+			tasks: [{
+				id: "133BA806595B8FAF"
+				item: "gtceu:steel_ingot"
+				type: "item"
+			}]
+			title: "A Good Alloy"
+			x: 4.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["0B78DEE76ECACECD"]
+			id: "3319FBB30E2565E9"
+			optional: true
+			shape: "circle"
+			tasks: [{
+				id: "548626E5F2B58E06"
+				item: "create:cardboard"
+				type: "item"
+			}]
+			title: "Pressing Paper... Again"
+			x: -2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["3DAE29900138C631"]
+			id: "3E1F5B2B6901DAD7"
+			tasks: [{
+				id: "653151F65F780134"
+				item: "minecraft:redstone"
+				type: "item"
+			}]
+			title: "Primitive Conductor"
+			x: 8.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["3E1F5B2B6901DAD7"]
+			id: "6A6126C595D6600C"
+			tasks: [{
+				count: 32L
+				id: "7509FC89694B3D5D"
+				item: { Count: 4, id: "gtceu:red_alloy_ingot" }
+				type: "item"
+			}]
+			title: "Seeing Red"
+			x: 8.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["7BBA9DD976A6E780"]
+			id: "17CC983C09E32659"
+			tasks: [{
+				id: "76352980D4F2A757"
+				item: "create:mechanical_saw"
+				type: "item"
+			}]
+			title: "Wiremill?"
+			x: 6.0d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"17CC983C09E32659"
+				"6A6126C595D6600C"
+			]
+			icon: "gtceu:fine_copper_wire"
+			id: "1CDC7996D7D092F6"
+			tasks: [
+				{
+					count: 32L
+					id: "6F83E72BB7EFF7BD"
+					item: { Count: 32, id: "gtceu:copper_single_wire" }
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "38B1C00106F9B67D"
+					item: { Count: 32, id: "gtceu:red_alloy_single_wire" }
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "29983666B0F21924"
+					item: { Count: 32, id: "gtceu:nickel_single_wire" }
+					type: "item"
+				}
+				{
+					id: "3389F05C66BC03BD"
+					item: {
+						Count: 1
+						id: "gtceu:steel_wire_cutter"
+						tag: {
+							DisallowContainerItem: 0b
+							GT.Behaviours: { }
+							GT.Tool: {
+								Damage: 0
+								HarvestLevel: 3
+								MaxDamage: 511
+								ToolSpeed: 9.0f
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Wiremill!"
+			x: 8.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["3DAE29900138C631"]
+			id: "3F1FF919D627143D"
+			tasks: [{
+				id: "5A844FA67C2B8C96"
+				item: "gtceu:coal_dust"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["1CDC7996D7D092F6"]
+			id: "627B8FE7F72AF834"
+			tasks: [{
+				count: 5L
+				id: "148A6FE9CFEA9F5F"
+				item: "gtceu:vacuum_tube"
+				type: "item"
+			}]
+			title: "First Electrical Component"
+			x: 6.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["627B8FE7F72AF834"]
+			id: "0540DCEE3146FE19"
+			tasks: [{
+				id: "0AA2F12F3F127418"
+				item: "create:deployer"
+				type: "item"
+			}]
+			title: "Primitive Assembler"
+			x: 8.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["0540DCEE3146FE19"]
+			id: "03B989D4321CD599"
+			tasks: [
+				{
+					count: 16L
+					id: "37B96D659B61CDE1"
+					item: { Count: 16, id: "gtceu:tin_single_cable" }
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "5203BAB19A588DB4"
+					item: { Count: 6, id: "gtceu:red_alloy_single_cable" }
+					type: "item"
+				}
+			]
+			title: "Insulation"
+			x: 10.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["03B989D4321CD599"]
+			id: "41B4047ADD819E9F"
+			tasks: [{
+				id: "52A4931C20CBA82C"
+				item: "gtceu:basic_electronic_circuit"
+				type: "item"
+			}]
+			title: "Birth of Electronics"
+			x: 12.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["41B4047ADD819E9F"]
+			id: "13A3E89B99CA4495"
+			tasks: [{
+				id: "25B765294ADBCEB8"
+				item: "gtceu:lv_machine_hull"
+				type: "item"
+			}]
+			title: "Heavy Machinery"
+			x: 12.0d
+			y: 8.0d
+		}
+		{
+			dependencies: [
+				"13A3E89B99CA4495"
+				"3F1FF919D627143D"
+			]
+			description: [
+				"To setup the basic generator make a Redstone Magnet based Generator Coil multiblock"
+				""
+				"Details on how to build it can be found in the Generator Coil's ponder"
+				""
+				"To complete the multiblock attach an Energy Converter onto the Carbon Brushes and right click it with a soft mallet"
+				""
+				"This setup can generate 128 Forge Energy per tick which converts to 1 Amp of Low Voltage (32 EU) when working at full power, using 12,3 Ksu"
+				"{@pagebreak}"
+				"Note that:"
+				""
+				"1. GregTech Cables/Wires can power Forge Energy based machines directly"
+				""
+				"2. Gregtech Cables/Wires have power loss mesured in Loss/Meter/Ampere, which is loss of EU times distance in blocks times Amperage"
+				""
+				"3. 4 Amps of LV are equal to 1 Amp of MV and 4 Amps MV are equal to 1 Amp HV"
+				""
+				"4. Carbon Brushes can collect power from 4 Generator Coils at once"
+			]
+			icon: "create_new_age:generator_coil"
+			id: "6EFFD12594E8A19A"
+			size: 2.0d
+			tasks: [
+				{
+					id: "5378580708DAEA44"
+					item: "gtceu:lv_1a_energy_converter"
+					type: "item"
+				}
+				{
+					id: "635C9CB4FAEDFEEA"
+					item: "create_new_age:generator_coil"
+					type: "item"
+				}
+				{
+					count: 12L
+					id: "0E3D763BDE5FBE44"
+					item: { Count: 12, id: "create_new_age:redstone_magnet" }
+					type: "item"
+				}
+				{
+					id: "52B92C65E318CE3D"
+					item: "create_new_age:carbon_brushes"
+					type: "item"
+				}
+				{
+					id: "34F6630BE632132B"
+					item: {
+						Count: 1
+						id: "gtceu:rubber_mallet"
+						tag: {
+							DisallowContainerItem: 0b
+							GT.Behaviours: { }
+							GT.Tool: {
+								Damage: 0
+								MaxDamage: 255
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Generating Power"
+			x: 12.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["41B4047ADD819E9F"]
+			description: ["Access to LV Circuts unlocks Transmitters, a vital component for basic automation"]
+			id: "2E5663FBF939F563"
+			optional: true
+			shape: "circle"
+			tasks: [{
+				id: "28D907EC744EF9BC"
+				item: "create:transmitter"
+				type: "item"
+			}]
+			title: "Communication"
+			x: 4.0d
+			y: 12.0d
+		}
+		{
+			dependencies: [
+				"3319FBB30E2565E9"
+				"2E5663FBF939F563"
+			]
+			icon: "create:item_vault"
+			id: "6CD5D214AB076658"
+			optional: true
+			shape: "circle"
+			tasks: [
+				{
+					id: "5C6B51723FAB5512"
+					item: "create:stock_ticker"
+					type: "item"
+				}
+				{
+					id: "6EBFE05B490FA1BE"
+					item: "create:packager"
+					type: "item"
+				}
+				{
+					id: "14D30D7DC16B0347"
+					item: "create:stock_link"
+					type: "item"
+				}
+				{
+					count: 27L
+					id: "4AE5B2B768BA1303"
+					item: { Count: 27, id: "create:item_vault" }
+					type: "item"
+				}
+				{
+					id: "3207E2D89FDF8537"
+					item: "create:blaze_burner"
+					type: "item"
+				}
+				{
+					id: "3E707540D307659C"
+					item: "create:item_hatch"
+					type: "item"
+				}
+			]
+			title: "Create's Complicated Storage"
+			x: -2.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["535AA900D5088B82"]
+			id: "67149A2D861050EE"
+			optional: true
+			shape: "circle"
+			tasks: [{
+				id: "19559C484B9AA5D2"
+				item: "gtceu:prospector.lv"
+				type: "item"
+			}]
+			title: "Scanning For Ores"
+			x: 6.0d
+			y: 16.0d
+		}
+		{
+			dependencies: ["2E5663FBF939F563"]
+			id: "0E9DEFA4E8C5AA5B"
+			optional: true
+			shape: "circle"
+			tasks: [{
+				id: "4421EA6367B60993"
+				item: "create:redstone_link"
+				type: "item"
+			}]
+			title: "Sharing Impulses"
+			x: 2.0d
+			y: 14.0d
+		}
+		{
+			dependencies: ["2E5663FBF939F563"]
+			icon: "create:display_board"
+			id: "535AA900D5088B82"
+			optional: true
+			shape: "circle"
+			tasks: [
+				{
+					id: "24CF8D57CDC471E6"
+					item: "create:display_link"
+					type: "item"
+				}
+				{
+					id: "7C250240932AC739"
+					item: "create:display_board"
+					type: "item"
+				}
+				{
+					id: "44456FBF40EE2058"
+					item: "create:nixie_tube"
+					type: "item"
+				}
+			]
+			title: "Basic Displays"
+			x: 6.0d
+			y: 14.0d
+		}
+		{
+			dependencies: ["0E9DEFA4E8C5AA5B"]
+			id: "15B323B816628F23"
+			optional: true
+			shape: "circle"
+			tasks: [{
+				id: "29C46E5E6E23B187"
+				item: "create:linked_controller"
+				type: "item"
+			}]
+			title: "Remote Control"
+			x: 2.0d
+			y: 16.0d
+		}
+		{
+			dependencies: ["7BBA9DD976A6E780"]
+			description: [""]
+			id: "4103834721E460C3"
+			optional: true
+			shape: "circle"
+			tasks: [{
+				id: "1D45DED1DDA3D539"
+				item: "create:mechanical_drill"
+				type: "item"
+			}]
+			title: "Drilling Away"
+			x: 2.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["7BBA9DD976A6E780"]
+			id: "0BA200416CEB8180"
+			optional: true
+			shape: "circle"
+			tasks: [{
+				id: "11D46C9518EC33DC"
+				item: "create:mechanical_harvester"
+				type: "item"
+			}]
+			title: "Hungry No More"
+			x: 4.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["0540DCEE3146FE19"]
+			id: "35A688980DD53290"
+			tasks: [{
+				id: "29824E5D298F3052"
+				item: "create:precision_mechanism"
+				type: "item"
+			}]
+			title: "Mechanical Circutry"
+			x: 6.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["35A688980DD53290"]
+			description: ["The Mechanical Arm can be used to move items more easily, but could there be another use for it?"]
+			id: "51A0519B713CC1D5"
+			tasks: [{
+				id: "3B5B2B96DA7918D8"
+				item: "create:mechanical_arm"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["6E3F12695E915908"]
+			icon: "create:belt_connector"
+			id: "03947EA0F2252523"
+			optional: true
+			shape: "circle"
+			tasks: [
+				{
+					id: "27F1221438DD5916"
+					item: "create:belt_connector"
+					type: "item"
+				}
+				{
+					id: "51C35B2C604BAC7D"
+					item: "create:andesite_funnel"
+					type: "item"
+				}
+				{
+					id: "624DEB00B903EA78"
+					item: "create:brass_funnel"
+					type: "item"
+				}
+				{
+					id: "45FC2DC4453B77BF"
+					item: "create:andesite_tunnel"
+					type: "item"
+				}
+				{
+					id: "6DAC72C327AAD026"
+					item: "create:brass_tunnel"
+					type: "item"
+				}
+			]
+			title: "Moving Items"
+			x: 0.0d
+			y: 6.0d
+		}
+	]
+	title: "Steam Age"
+}

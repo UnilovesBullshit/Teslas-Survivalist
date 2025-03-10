@@ -1,0 +1,80 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "getting_started"
+	group: ""
+	icon: "minecraft:grass_block"
+	id: "43920F8813B01559"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"Tesla's Survivalist heavily relies on it's questbook."
+				""
+				"The main purpose of the questbook is to guide you through the progression of the pack."
+				""
+				"The quests not only guide you through the progression, but also explain various machines and mechanics. "
+				""
+				"If you don't understand a mechanic or don't know how to procede, the questbook should be the first place to look"
+			]
+			id: "72359978E7B34FEF"
+			rewards: [{
+				count: 12
+				id: "5B48689375C83623"
+				item: "minecraft:bread"
+				type: "item"
+			}]
+			tasks: [{
+				id: "65AE20E8E293DDF0"
+				title: "Welcome"
+				type: "checkmark"
+			}]
+			title: "The Questbook 1"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3B408E40DE4A8316"]
+			description: [
+				"In Tesla's Survivalist, ore generation is very diffrent compared to vannila Minecraft."
+				""
+				"Instead of sprinkling all ore types across the world, ores are concentrated in ore veins of related materials and varying rarity."
+				""
+				"Ore Veins generate in a regular grid pattern radiating outwards from chunk (0,0). Away from the 0,0 axis, veins are found every five chunks - that is, there will be an ore chunk, then four non-ore chunks, and then another ore chunk."
+				""
+				"When a vein is discovered, it will be marked on the player's minimap Show GT Ore Veins overlay."
+				"{@pagebreak}"
+				"Some veins are &lbiome specific&r, to learn more refer to the &o Veins and Resources&r chapter of the questbook"
+			]
+			icon: "gtceu:iron_ore"
+			id: "19B9600C4C68F6FD"
+			rewards: [{
+				id: "1B6BD52CCC86F08C"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+			subtitle: "Where are my ores?!"
+			tasks: [{
+				id: "5CB4CF19B9DF6FD4"
+				title: "Ore Generation"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["72359978E7B34FEF"]
+			description: ["You don't need to complete every quest to progress. Some quests are marked as main, those mark the progression path and you will need to complete those to unlock new tabs and generally progress. You can recognize them by thier cogwheel shape. "]
+			id: "3B408E40DE4A8316"
+			tasks: [{
+				id: "524CD3E1492F761C"
+				title: "The Questbook 2"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -1.5d
+		}
+	]
+	title: "Getting Started"
+}

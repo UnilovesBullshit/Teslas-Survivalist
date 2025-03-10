@@ -1,0 +1,224 @@
+{
+	autofocus_id: "1E9F675813E059CA"
+	consume_items: false
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "overworld"
+	group: "368DCEF9B749ECD2"
+	icon: "gtceu:copper_ore"
+	id: "2C073244539FF8FC"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			disable_toast: true
+			icon: "minecraft:grass_block"
+			id: "1E9F675813E059CA"
+			tasks: [{
+				dimension: "minecraft:overworld"
+				id: "7A56A9F8800C88DE"
+				title: "Overworld"
+				type: "dimension"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1E9F675813E059CA"]
+			description: ["A common ore found between Y 20 and Y 80"]
+			icon: "gtceu:copper_ore"
+			id: "73E3D04A78F45C1E"
+			rewards: [{
+				id: "7DD876D487E332A2"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+			tasks: [{
+				count: 64L
+				id: "5C6997E9251ABD21"
+				item: { Count: 64, id: "minecraft:raw_copper" }
+				type: "item"
+			}]
+			title: "Copper Ore"
+			x: 2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["1E9F675813E059CA"]
+			description: ["A common ore found between Y0 and Y40"]
+			icon: "gtceu:iron_ore"
+			id: "4756A12E62DA3D3E"
+			rewards: [{
+				id: "4BE39B8E8B21D335"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+			tasks: [{
+				count: 64L
+				id: "6B3F776869B64953"
+				item: { Count: 64, id: "minecraft:raw_iron" }
+				type: "item"
+			}]
+			title: "Iron Ore"
+			x: 1.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["1E9F675813E059CA"]
+			description: ["Coal ore is a very common ore found between Y40 and Y120"]
+			icon: "gtceu:coal_ore"
+			id: "3C13B43CFB6C7231"
+			rewards: [{
+				id: "1E84A3BB68E3B680"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+			tasks: [{
+				count: 64L
+				id: "6FDC00299D29B08B"
+				item: { Count: 64, id: "minecraft:coal" }
+				type: "item"
+			}]
+			title: "Coal Ore"
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1E9F675813E059CA"]
+			description: ["Diamond is a rare ore found between Y -60 and Y -20"]
+			icon: "gtceu:diamond_ore"
+			id: "3F0DF4D1E858D5DB"
+			rewards: [{
+				id: "2623229B2663D572"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+			tasks: [{
+				count: 16L
+				id: "57524A16899F2348"
+				item: "gtceu:raw_diamond"
+				type: "item"
+			}]
+			title: "Diamond Ore"
+			x: -2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["1E9F675813E059CA"]
+			description: ["An uncommon ore that appears between Y 0 and Y 60"]
+			icon: "gtceu:nickel_ore"
+			id: "5DD4FD3A96893126"
+			rewards: [{
+				id: "70DB6DE1A8AE293E"
+				type: "xp_levels"
+				xp_levels: 3
+			}]
+			tasks: [
+				{
+					count: 32L
+					id: "1FCB8C10C80AA698"
+					item: { Count: 32, id: "gtceu:raw_nickel" }
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "0C45E838F7D5304E"
+					item: { Count: 32, id: "create:raw_zinc" }
+					type: "item"
+				}
+			]
+			title: "Nickel and Zinc Ore"
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["1E9F675813E059CA"]
+			description: ["An uncommon ore that appears between Y -40 and Y 0"]
+			icon: "gtceu:redstone_ore"
+			id: "4536CAC2BB282F12"
+			rewards: [{
+				id: "3744674F8B6AF94F"
+				type: "xp_levels"
+				xp_levels: 3
+			}]
+			tasks: [{
+				count: 32L
+				id: "6608648522CFB360"
+				item: { Count: 64, id: "gtceu:raw_redstone" }
+				type: "item"
+			}]
+			title: "Redstone Ore"
+			x: -3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1E9F675813E059CA"]
+			icon: "gtceu:lapis_ore"
+			id: "5157CE45FE301BE8"
+			tasks: [{
+				count: 32L
+				id: "3A9C65FAF8B98905"
+				item: "gtceu:raw_lapis"
+				type: "item"
+			}]
+			title: "Lapis Ore"
+			x: -1.0d
+			y: 2.0d
+		}
+		{
+			icon: "minecraft:netherrack"
+			id: "0C904704C8EBF50A"
+			tasks: [{
+				dimension: "minecraft:the_nether"
+				disable_toast: true
+				id: "539EF371FD071E81"
+				title: "Nether"
+				type: "dimension"
+			}]
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["0C904704C8EBF50A"]
+			description: [
+				"A rare ore found only in the Soulsand Valley between Y 60 and Y 120"
+				"Only used for magic"
+			]
+			icon: "gtceu:netherrack_silver_ore"
+			id: "6D004540EDB3F3C3"
+			tasks: [{
+				count: 32L
+				id: "1D3D86C73C301022"
+				item: { Count: 32, id: "gtceu:raw_silver" }
+				type: "item"
+			}]
+			title: "Silver Ore"
+			x: -3.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["0C904704C8EBF50A"]
+			description: ["A common ore found between Y 0 and Y 40"]
+			icon: "gtceu:netherrack_sulfur_ore"
+			id: "3F98C7AD0E9D2635"
+			tasks: [
+				{
+					count: 64L
+					id: "1E96A0ADC84D6AE8"
+					item: { Count: 64, id: "gtceu:raw_sulfur" }
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "07FE446054AC2513"
+					item: { Count: 16, id: "minecraft:quartz" }
+					type: "item"
+				}
+			]
+			title: "Sulfur Ore"
+			x: 3.0d
+			y: -3.0d
+		}
+	]
+	title: "Ores"
+}
